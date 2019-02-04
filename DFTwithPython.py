@@ -22,7 +22,7 @@ f = np.linspace(0, 1/dT, N-1)
 s = np.sin(2*np.pi*1*t)
 #white noise
 r = np.array([], dtype='f')
-for i in range(int(N)):
+for i in range(int(N-1)):
     r = np.append(r, [rand.uniform(-1,1)])
 #signal with noise
 sr = s+r
