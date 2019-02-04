@@ -15,9 +15,9 @@ T = 100
 #Amount of samples
 N = T/dT
 #time axis
-t = np.linspace(0, T, N)
+t = np.linspace(0, T, N-1) #->DFT 0-N -> N-1
 #frequency axis
-f = np.linspace(0, 1/dT, N)
+f = np.linspace(0, 1/dT, N-1)
 #sine
 s = np.sin(2*np.pi*1*t)
 #white noise
